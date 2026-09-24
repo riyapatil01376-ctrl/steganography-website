@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz | StegoSecure</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">🔐 STEGOSECURE</div>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="encode.html">Encode</a></li>
+        <li><a href="decode.html">Decode</a></li>
+        <li><a href="techniques.html">Techniques</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="applications.html">Applications</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+<section class="section">
+
+    <h1 class="section-title">
+        📝 Steganography Quiz
+    </h1>
+
+    <div class="container">
+
+        <div class="question">
+
+            <h3>1. What is steganography?</h3>
+
+            <label>
+                <input type="radio" name="q1" value="a">
+                Hiding information inside another medium
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="b">
+                Deleting information
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="c">
+                Compressing a file
+            </label>
+
+        </div>
+
+        <div class="question">
+
+            <h3>2. What does LSB stand for?</h3>
+
+            <label>
+                <input type="radio" name="q2" value="a">
+                Least Significant Bit
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="b">
+                Large Security Block
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="c">
+                Low System Byte
+            </label>
+
+        </div>
+
+        <div class="question">
+
+            <h3>3. Which can be used as a carrier?</h3>
+
+            <label>
+                <input type="radio" name="q3" value="a">
+                Image
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="b">
+                Audio
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="c">
+                Both
+            </label>
+
+        </div>
+
+        <div class="question">
+
+            <h3>4. What is cryptography mainly concerned with?</h3>
+
+            <label>
+                <input type="radio" name="q4" value="a">
+                Encryption and decryption
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="b">
+                Image resizing
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="c">
+                File deletion
+            </label>
+
+        </div>
+
+        <div class="question">
+
+            <h3>5. What is a stego-image?</h3>
+
+            <label>
+                <input type="radio" name="q5" value="a">
+                An image containing hidden information
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="b">
+                A damaged image
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="c">
+                A compressed image
+            </label>
+
+        </div>
+
+        <button
+            class="btn btn-primary"
+            onclick="checkQuiz()"
+        >
+            Check Score
+        </button>
+
+        <div id="result"></div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 STEGOSECURE</p>
+</footer>
+
+<script src="js/quiz.js"></script>
+
+</body>
+</html>
