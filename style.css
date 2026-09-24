@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #172033;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background: #101a35;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #4dd4ff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #4dd4ff;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+    background: linear-gradient(135deg, #101a35, #193b68);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    color: #4dd4ff;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #dce8f5;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.btn-primary {
+    background: #4dd4ff;
+    color: #101a35;
+}
+
+.btn-secondary {
+    background: white;
+    color: #101a35;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* SECTIONS */
+
+.section {
+    padding: 65px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 35px;
+    color: #101a35;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #173f73;
+}
+
+/* FEATURE BOX */
+
+.feature-box {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    max-width: 900px;
+    margin: auto;
+}
+
+/* FORM */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="file"],
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccd5e0;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.preview {
+    max-width: 100%;
+    max-height: 350px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* ALERT */
+
+.message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    display: none;
+    background: #e4f7ec;
+    color: #166534;
+}
+
+.error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* TIMELINE */
+
+.timeline {
+    border-left: 4px solid #4dd4ff;
+    padding-left: 30px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.timeline-item {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+}
+
+/* QUIZ */
+
+.question {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+}
+
+.question label {
+    display: block;
+    margin: 10px 0;
+}
+
+#result {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #101a35;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+}
